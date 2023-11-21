@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>GTAT - Online GTA: San Andreas Multiplayer MMOG</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+
+		<meta name="google-site-verification" content="Hae4cGMsbj6ccTWNDIZBevRxiukwUi84T4BtfCYtf3A" />
+		<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<meta name="description" content="GTAT is a GTA San Andreas Multiplayer Server. Being one of the oldest GTA SAMP servers, it unites most SAMP lagshot and SAMP A/D players (SAMP cbug allowed)" />
+		<meta name="keywords" content="samp lagshot, samp server, samp dm, gtat samp, gta tournament, samp a/d, samp aad, samp attdef, attack and defend, samp lagshot server, samp dm server, gtat media, samp doublehit, samp cbug, gta samp lagshot, gta samp deathmatch, samp deathmatch, gta sa servers, samp lagshot servers" />
+		<meta property="og:type" content="company" />
+		<meta property="og:title" content="GTA:T - SA:MP Lagshot DeathMatch Server" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content="GTAT is a GTA San Andreas Multiplayer Server. Being one of the oldest GTA SAMP servers, it unites most SAMP lagshot and SAMP A/D players (SAMP cbug allowed)" />
+		<meta property="og:url" content="https://gtat.pro/" />
+		<meta property="og:site_name" content="GTA:T - SA:MP Lagshot DeathMatch Server" />
+
+		<link rel="stylesheet" type="text/css" href="../../../css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="../../../css/dat-menu.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="../../../css/portal.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="../../../css/responsive.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="../../../css/font.css" />
+		<script src="https://kit.fontawesome.com/64cf6fa692.js" crossorigin="anonymous"></script>
+
+		<!--[if lt IE 9 ]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			/* Man content & sidebar top lne, default #256193 */
+			#sidebar .panel,
+			#main-box #main {
+				border-top: 5px solid #256193;
+			}
+
+			/* Slider colors, default #256193 */
+			a.featured-select,
+			#slider-info .padding-box ul li:before,
+			.home-article.right ul li a:hover {
+				background-color: #256193;
+			}
+
+			/* Button color, default #256193 */
+			.panel-duel-voting .panel-duel-vote a {
+				background-color: #256193;
+			}
+
+			/* Menu background color, default #000 */
+			#menu-bottom.blurred #menu > .blur-before:after {
+				background-color: #000;
+			}
+
+			/* Top menu background, default #0D0D0D */
+			#header-top {
+				background: #0D0D0D;
+			}
+
+			/* Sidebar panel titles color, default #333333 */
+			#sidebar .panel > h2 {
+				color: #333333;
+			}
+
+			/* Main titles color, default #353535 */
+			#main h2 span {
+				color: #353535;
+			}
+
+			/* Selection color, default #256193 */
+			::selection {
+				background: #256193;
+			}
+
+			/* Links hover color, default #256193 */
+			.article-icons a:hover,
+			a:hover {
+				color: #256193;
+			}
+
+			/* Image hover background, default #256193 */
+			.article-image-out,
+			.article-image {
+				background: #256193;
+			}
+
+			/* Image hover icons color, default #256193 */
+			span.article-image span .fa {
+				color: #256193;
+			}
+		</style>
+	</head>
+	<!--<body class="no-slider">-->
+	<body class="no-slider">
+		<!-- BEGIN #slider-imgs -->
+		<div id="slider-imgs">
+			<div class="featured-img-box">
+				<div id="featured-img-1" class="featured-img"></div>
+			</div>
+		<!-- END #slider-imgs -->
+		</div>
+
+		<!-- BEGIN #top-layer -->
+		<div id="top-layer">
+			<%- include('../partials/header-top.ejs') %>
+			<section id="content">
+				<%- include('../partials/header.ejs') %>
+				<div id="main-box">
+					<div id="main">
+						<%- body %>
+					</div>
+					<%- include('../partials/sidebar.ejs') -%>
+					<div class="clear-float"></div>
+				</div>
+			</section>
+		<!-- END #top-layer -->
+		</div>
+			
+		<div class="clear-float"></div>
+		
+		<%- include('../partials/footer.ejs') -%>
+		<script type='text/javascript' src='../../../jscript/jquery-1.11.2.min.js'></script>
+		<script type='text/javascript' src='../../../jscript/modernizr.custom.50878.js'></script>
+		<script type='text/javascript' src='../../../jscript/iscroll.js'></script>
+		<script type='text/javascript' src='../../../jscript/dat-menu.js'></script>
+		<script type='text/javascript'>
+			var strike_featCount = 4;
+			var strike_autostart = true;
+			var strike_autoTime = 7000;
+		</script>
+		<script type='text/javascript' src='../../../jscript/theme-script.js'></script>
+	</body>
+</html>

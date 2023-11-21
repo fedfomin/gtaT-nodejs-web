@@ -1,0 +1,22 @@
+<div class="content-padding">  
+    <div class="podcast-list">
+        <a href="" class="item podcast-live">
+            <span class="podcast-li-nr"></span>
+            <span class="podcast-li-title">Name</span>
+            <span class="podcast-li-time"><strong>Total Respect</strong></span>
+        </a>
+        <%
+        if(userData.length!=0){
+            var i=1;
+            userData.forEach(function(data){
+        %>
+        <a href="#" class="item">
+            <span class="podcast-li-nr">#<%=i; %></span><span class="podcast-li-title">[<%=data.tag %>] <%=data.gang_name %></span>
+            <span class="podcast-li-time"><%=data.total_respect_gang %></span>
+        </a>    
+        <%  i++; }) %>
+        <% } else{ %>
+            no data found
+        <% } %>
+    </div>
+</div>
